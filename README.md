@@ -11,8 +11,8 @@ This program determines objects on the webcam using a cascade classifier, and al
 4) Выполнить следующую команду: "pip install -r requirements.txt", ждать минут 10-15, в зависимости от мощности ПК.
 5) Подключить веб-камеру по USB.
 6) Выполнить команду в командной строке: "python PlateDetect_Diplom.py"
-Что может произойти далее:
 
+Что может произойти далее:
 Если ошибка содержит "error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'", необходимо в PlateDetect_Diplom.py в строке 6 изменить значение 0 на иное (1, 2 и т.д.). Иначе если программа продолжает выводить ошибки - стоит подключить соединение с камерой.
 При других ошибках стоит воспользоваться интернетом.
 
