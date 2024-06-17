@@ -1,2 +1,18 @@
 # platedetectru
-This program determines objects on the webcam using a cascade classifier, and also reads text from the frame, followed by logging in the database / Данная программа определяет с помощью каскадного классификатора объекты на веб-камере, а также считывает текст с кадра, с последующим логированием в базе
+This program determines objects on the webcam using a cascade classifier, and also reads text from the frame, followed by logging in the database
+
+Данная программа определяет с помощью каскадного классификатора объекты на веб-камере, а также считывает текст с кадра, с последующим логированием в базе
+
+Порядок запуска:
+ВНИМАНИЕ, все действия выполнены на ОС Windows 11.
+1) Установить Python новой версии.
+2) Скачать и установить Tesseract-OCR (https://github.com/UB-Mannheim/tesseract/wiki), выбрав языковые и скриптовые дополнения - русский и английский.
+3) Открыть командную строку внутри этой папки.
+4) Выполнить следующую команду: "pip install -r requirements.txt", ждать минут 10-15, в зависимости от мощности ПК.
+5) Подключить веб-камеру по USB.
+6) Выполнить команду в командной строке: "python PlateDetect_Diplom.py"
+Что может произойти далее:
+Если ошибка содержит "error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'", необходимо в PlateDetect_Diplom.py в строке 6 изменить значение 0 на иное (1, 2 и т.д.). Иначе если программа продолжает выводить ошибки - стоит подключить соединение с камерой.
+При других ошибках стоит воспользоваться интернетом.
+
+Успех: Программа запущена, в консоль выведена строка "Start!", а значит модель может начать определять автомобильные номера.
